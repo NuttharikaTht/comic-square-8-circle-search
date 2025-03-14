@@ -13,7 +13,7 @@ app.use(cors());
 app.get('/data', (req, res) => {
     const results = [];
 
-    fs.createReadStream(path.join(__dirname, '/resources/cq8_menu.csv'))
+    fs.createReadStream(path.join(__dirname, '/server/cq8_menu.csv'))
         .pipe(csv())
         .on('data', (row) => {
             // Processing row if needed (e.g., split fandoms)
