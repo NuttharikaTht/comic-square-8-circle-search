@@ -211,6 +211,7 @@ const App = () => {
                                     frameBorder="0"
                                     allowTransparency="true"
                                     allow="encrypted-media"
+                                    title="Facebook Post"
                                 ></iframe>
                             </div>
                             <h3>Fandoms</h3>
