@@ -5,7 +5,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 // Use CORS middleware to allow requests from your frontend (React app)
 app.use(cors());
