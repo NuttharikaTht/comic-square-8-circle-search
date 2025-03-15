@@ -10,6 +10,9 @@ const port = 5001;
 // Use CORS middleware to allow requests from your frontend (React app)
 app.use(cors());
 
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, "client/build")));
+
 app.get('/data', (req, res) => {
     const results = [];
 
